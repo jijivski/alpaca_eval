@@ -35,6 +35,9 @@ def evaluate(
     Annotator=annotators.PairwiseAnnotator,
     **annotator_kwargs,
 ):
+    print('force overwrite')
+    is_overwrite_leaderboard: bool = True
+    
     """Evaluate a model based on its outputs. This is the default entrypoint if no command is specified.
 
     Parameters

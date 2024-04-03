@@ -53,7 +53,7 @@ def huggingface_api_completions(
 
     default_kwargs = dict(do_sample=do_sample, return_full_text=False)
     default_kwargs.update(kwargs)
-    logging.info(f"Kwargs to completion: {default_kwargs}")
+    logging.info(f"HF Kwargs to completion: {default_kwargs}")
 
     with utils.Timer() as t:
         partial_completion_helper = functools.partial(

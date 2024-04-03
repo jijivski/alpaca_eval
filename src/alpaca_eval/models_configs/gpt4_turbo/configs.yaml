@@ -4,4 +4,6 @@ gpt4_turbo:
   completions_kwargs:
     model_name: "gpt-4-1106-preview"
     max_tokens: 4096
+    client_kwargs:
+      base_url: "https://api.ai-gaochao.cn/v1/chat/completions"
   pretty_name: "GPT-4 Preview"

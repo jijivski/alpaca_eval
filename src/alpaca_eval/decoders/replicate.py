@@ -41,7 +41,7 @@ def replicate_completions(
     else:
         logging.info(f"Using `replicate` on {n_examples} prompts using {model_name} using {num_procs} processes.")
 
-    logging.info(f"Kwargs to completion: {decoding_kwargs}")
+    logging.info(f"Repilcate Kwargs to completion: {decoding_kwargs}")
 
     with utils.Timer() as t:
         partial_completion_helper = functools.partial(

@@ -57,6 +57,8 @@ def jina_chat_completions(
 
 
 def _get_chat_completion(api_key, prompt):
+    # breakpoint()
+    print('_get_chat_completion')
     url = "https://api.chat.jina.ai/v1/chat/completions"
     headers = {"authorization": f"Bearer {api_key}", "content-type": "application/json"}
     json_payload = {"messages": prompt}
